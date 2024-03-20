@@ -1,4 +1,5 @@
 import "@mantine/core/styles.css";
+import Head from "next/head";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 
@@ -14,11 +15,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Encode+Sans:wght@100;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <head>
         <ColorSchemeScript />
       </head>
-      <body>
-        <MantineProvider>{children}</MantineProvider>
+      <body style={{ backgroundColor: "#fff" }}>
+        <MantineProvider
+          theme={{
+            fontFamily: "Cairo",
+          }}
+        >
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
