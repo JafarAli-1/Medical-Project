@@ -57,7 +57,9 @@ export default function Footer({ value }: any) {
 
     return (
       <div className={classes.wrapper} key={group.title}>
-        <Text className={classes.title}>{group.title}</Text>
+        <Text c="#fff" className={classes.title}>
+          {group.title}
+        </Text>
         {links}
       </div>
     );
