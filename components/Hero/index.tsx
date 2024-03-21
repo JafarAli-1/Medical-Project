@@ -30,6 +30,7 @@ export default function Hero() {
       </Box>
 
       <Title
+        className={styles.titleResponsive}
         style={{
           zIndex: "2",
           position: "relative",
@@ -44,6 +45,7 @@ export default function Hero() {
         أكاديمية لندن للأبحاث العلمية والتدريب
       </Title>
       <Text
+        className={styles.desResponsive}
         style={{
           zIndex: "2",
           position: "relative",
@@ -61,8 +63,12 @@ export default function Hero() {
       </Text>
 
       {/* About-Us Hero */}
-      <Box style={{ position: "relative", top: "650px" }}>
+      <Box
+        className={styles.boxRes}
+        style={{ position: "relative", top: "650px" }}
+      >
         <Title
+          className={styles.titleAbout}
           fz="45px"
           ta="center"
           c="#10224B"
@@ -75,6 +81,7 @@ export default function Hero() {
         </Title>
 
         <Title
+          className={styles.titleRes2}
           mt="xl"
           c="#10224B"
           ta="center"
@@ -87,6 +94,7 @@ export default function Hero() {
         </Title>
 
         <Text
+          className={styles.desResponsive2}
           style={{
             zIndex: "2",
             position: "relative",
@@ -122,6 +130,7 @@ export default function Hero() {
         </Flex>
 
         <Title
+          className={styles.titleAbout}
           style={{
             zIndex: "1",
             position: "relative",
@@ -138,8 +147,6 @@ export default function Hero() {
 
         {/* Leader-Word */}
         <Box
-          //   bg="#B6E8EE"
-
           pt="24px"
           pb="24px"
           style={{
@@ -149,9 +156,23 @@ export default function Hero() {
             background: "linear-gradient(#B6E8EE, #12D0E700)",
           }}
         >
-          <Flex align="center" justify="center" gap="250px">
+          <Flex
+            className={styles.flexResponsive}
+            align="center"
+            justify="center"
+            gap="250px"
+            wrap="wrap"
+          >
             <Image src={MissImage} alt="Mis.Word" className={styles.img3} />
-            <Text lh="xl" fz="25px" c="#10224B" fw="normal" w="40%" ta="right">
+            <Text
+              className={styles.desResponsive3}
+              lh="xl"
+              fz="25px"
+              c="#10224B"
+              fw="normal"
+              w="40%"
+              ta="right"
+            >
               تمثل مراكز الأبحاث والدراسات في عالمنا المعاصر دليلا ملموسا على
               تطور المعرفة في أي بلد من البلدان، في العالم فهذه المؤسسات بما
               تنتجه من منتج معرفي عالي الجودة، وما تضمه من مهارات بشرية متقدمة
@@ -169,12 +190,26 @@ export default function Hero() {
 
         <Box>
           <Flex justify="center">
-            <Button radius="50px" w="fit-content" h="80px" fz="40px">
+            <Button
+              className={styles.btnBoard}
+              radius="50px"
+              w="fit-content"
+              h="80px"
+              fz="40px"
+            >
               مما يتكون البورد؟
             </Button>
           </Flex>
 
-          <Text mt="xl" fz="24px" ta="center" c="#10224B" pl="250px" pr="250px">
+          <Text
+            className={styles.desResponsive4}
+            mt="xl"
+            fz="24px"
+            ta="center"
+            c="#10224B"
+            pl="250px"
+            pr="250px"
+          >
             يتكون البورد من مجموعة من الخبراء الذين يضعون معايير الخبرة والمعرفة
             اللازمة لجميع التخصصات الطبية والصيدلية والاشعة والسونار والتمريض
             والطب الوقائي للترقي لدرجة أخصائي معتمد في مجال معين، وبناء عليها
@@ -222,29 +257,54 @@ export default function Hero() {
 
           {/* Statistcs */}
           <Group
+            className={styles.groupResponsive}
             pos="relative"
             justify="center"
             gap="100px"
             style={{ zIndex: "5", top: "400px" }}
           >
             <Flex align="center" direction="column" gap="md">
-              <Image src={Stat1} alt="Stat1" width={150} height={150} />
-              <Title c="#10224B">0000</Title>
-              <Text c="#10224B" fz="xl">
+              <Image
+                className={styles.imgOne}
+                src={Stat1}
+                alt="Stat1"
+                width={150}
+                height={150}
+              />
+              <Title className={styles.zeroTitle} c="#10224B">
+                0000
+              </Title>
+              <Text className={styles.zeroDes} c="#10224B" fz="xl">
                 المتدربين
               </Text>
             </Flex>
             <Flex align="center" direction="column" gap="md">
-              <Image src={Stat2} alt="Stat1" width={150} height={150} />
-              <Title c="#10224B">0000</Title>
-              <Text c="#10224B" fz="xl">
+              <Image
+                className={styles.imgTwo}
+                src={Stat2}
+                alt="Stat1"
+                width={150}
+                height={150}
+              />
+              <Title className={styles.zeroTitle} c="#10224B">
+                0000
+              </Title>
+              <Text className={styles.zeroDes} c="#10224B" fz="xl">
                 قصص النجاح
               </Text>
             </Flex>
             <Flex align="center" direction="column" gap="md">
-              <Image src={Stat3} alt="Stat1" width={150} height={150} />
-              <Title c="#10224B">0000</Title>
-              <Text c="#10224B" fz="xl">
+              <Image
+                className={styles.imgThree}
+                src={Stat3}
+                alt="Stat1"
+                width={150}
+                height={150}
+              />
+              <Title className={styles.zeroTitle} c="#10224B">
+                0000
+              </Title>
+              <Text className={styles.zeroDes} c="#10224B" fz="xl">
                 الطلاب الحاصلين على الشهاده
               </Text>
             </Flex>
@@ -252,9 +312,15 @@ export default function Hero() {
 
           {/* Validation The Certificate */}
           <Box className={styles.boxCertification}>
-            <Flex align="center" justify="center" gap="100px">
+            <Flex
+              align="center"
+              justify="center"
+              gap="100px"
+              wrap="wrap"
+              className={styles.flexResponsive2}
+            >
               <Flex direction="column" gap="md">
-                <Text c="#FFFFFF" fz="25px">
+                <Text c="#FFFFFF" fz="25px" className={styles.zeroDes}>
                   اكتب رقم الشهادة للتحقق من صحتها على الفور
                 </Text>
                 <Input
@@ -279,7 +345,7 @@ export default function Hero() {
                 </Button>
               </Flex>
 
-              <Title c="#FFFFFF" fz="50px">
+              <Title c="#FFFFFF" fz="50px" className={styles.titleRes2}>
                 شهادات معتمدة
               </Title>
             </Flex>

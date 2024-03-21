@@ -30,3 +30,95 @@
   z-index: 5;
   top: 500px;
 }
+
+@media (max-width: 991px) {
+  .titleResponsive {
+    font-size: 30px !important;
+    top: 100px !important;
+    left: 30px !important;
+    text-align: center !important;
+  }
+
+  .desResponsive {
+    font-size: 20px !important;
+    top: 120px !important;
+    left: 30px !important;
+    text-align: center !important;
+  }
+
+  .img {
+    height: 500px;
+  }
+
+  .boxRes {
+    top: 300px !important;
+  }
+
+  .titleAbout {
+    font-size: 30px !important;
+  }
+
+  .titleRes2 {
+    font-size: 25px !important;
+  }
+
+  .desResponsive2 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  .desResponsive3 {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 20px !important;
+  }
+  .flexResponsive {
+    gap: 50px !important;
+  }
+
+  .btnBoard {
+    height: 50px !important;
+    font-size: 30px !important;
+  }
+
+  .desResponsive4 {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .img4 {
+    display: none;
+  }
+
+  .groupResponsive {
+    top: 100px !important;
+  }
+
+  .imgOne,
+  .imgTwo,
+  .imgThree {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .zeroTitle {
+    font-size: 22px !important;
+  }
+
+  .zeroDes {
+    font-size: 17px !important;
+  }
+
+  .boxCertification {
+    top: 200px !important;
+  }
+
+  .flexResponsive2 {
+    gap: 50px !important;
+    flex-direction: column-reverse;
+  }
+
+  .img {
+    width: revert-layer;
+  }
+}

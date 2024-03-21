@@ -8,7 +8,7 @@ export default function ValidatePage() {
     <div>
       <Header />
       <HeroValidate />
-      <Footer />
+      <Footer value={500} />
     </div>
   );
 }

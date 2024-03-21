@@ -41,7 +41,7 @@ const data = [
   },
 ];
 
-export default function Footer() {
+export default function Footer({ value }: any) {
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
       <Text<"a">
@@ -64,10 +64,16 @@ export default function Footer() {
   });
 
   return (
-    <footer className={classes.footer}>
+    <footer style={{ top: value }} className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          <Image src={LogoFooter} alt="Logo Footer" width={100} height={150} />
+          <Image
+            src={LogoFooter}
+            alt="Logo Footer"
+            width={100}
+            height={150}
+            className={classes.imgFooter}
+          />
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>
