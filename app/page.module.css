@@ -1,0 +1,9 @@
+@media (max-width: 991px) {
+  #logo {
+    width: 120px !important;
+  }
+
+  .face-book {
+    width: 15px !important;
+  }
+}

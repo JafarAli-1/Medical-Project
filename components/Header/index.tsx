@@ -5,6 +5,7 @@ import InstgramSVG from "@/SVG/Instgram";
 import LogoSVG from "@/SVG/Logo";
 import TicTok from "@/SVG/Tictok";
 import { Box, Button, Container, Flex, Group } from "@mantine/core";
+import styles from "./style.module.css";
 
 const links = [
   { link: "/", label: "الصفحة الرئيسية" },
@@ -37,6 +38,9 @@ export default function Header() {
         backgroundColor: "#fff",
         paddingTop: "8px",
         paddingBottom: "8px",
+        width: "100%",
+        maxWidth: "100%",
+        overflowX: "hidden",
       }}
     >
       <Container maw="90%">
@@ -48,6 +52,7 @@ export default function Header() {
             <InstgramSVG />
             <TicTok />
             <Button
+              className={styles.btnHeader}
               radius="xl"
               style={{
                 width: "fit-content",

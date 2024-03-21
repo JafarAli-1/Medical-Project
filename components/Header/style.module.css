@@ -1,0 +1,6 @@
+@media (max-width: 991px) {
+  .btnHeader {
+    font-size: 12px !important;
+    height: 21px !important;
+  }
+}

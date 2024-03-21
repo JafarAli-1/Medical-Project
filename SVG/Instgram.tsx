@@ -1,6 +1,9 @@
+import styles from "./styles-svg.module.css";
+
 export default function InstgramSVG() {
   return (
     <svg
+      className={styles.svg}
       xmlns="http://www.w3.org/2000/svg"
       width="20.458"
       height="20.458"

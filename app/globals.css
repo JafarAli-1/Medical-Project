@@ -77,9 +77,3 @@ a,
 button {
   font-family: "Cairo";
 }
-
-@media (max-width: 991px) {
-  #logo {
-    width: 120px !important;
-  }
-}

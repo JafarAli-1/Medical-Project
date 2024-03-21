@@ -1,6 +1,9 @@
+import styles from "./styles-svg.module.css";
+
 export default function TicTok() {
   return (
     <svg
+      className={styles.svg}
       xmlns="http://www.w3.org/2000/svg"
       id="Group_78"
       data-name="Group 78"

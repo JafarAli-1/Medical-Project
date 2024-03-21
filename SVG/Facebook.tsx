@@ -1,6 +1,9 @@
+import styles from "./styles-svg.module.css";
+
 export default function FaceBookSVG() {
   return (
     <svg
+      className={styles.svg}
       xmlns="http://www.w3.org/2000/svg"
       width="20.983"
       height="20.983"

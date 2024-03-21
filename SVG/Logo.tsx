@@ -1,8 +1,10 @@
+import styles from "./styles-svg.module.css";
+
 export default function LogoSVG() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      id="logo"
+      id={styles.logo}
       width="200"
       height="70"
       viewBox="0 0 364.721 95.069"

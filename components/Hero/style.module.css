@@ -117,8 +117,4 @@
     gap: 50px !important;
     flex-direction: column-reverse;
   }
-
-  .img {
-    width: revert-layer;
-  }
 }

@@ -26,7 +26,13 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body style={{ backgroundColor: "#fff" }}>
+      <body
+        style={{
+          backgroundColor: "#fff",
+          width: "100% !important",
+          overflowX: "hidden",
+        }}
+      >
         <MantineProvider
           defaultColorScheme="light"
           theme={{
