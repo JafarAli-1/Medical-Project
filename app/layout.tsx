@@ -28,6 +28,7 @@ export default function RootLayout({
       </head>
       <body style={{ backgroundColor: "#fff" }}>
         <MantineProvider
+          defaultColorScheme="light"
           theme={{
             fontFamily: "Cairo",
           }}
