@@ -16,6 +16,7 @@ export default function HeroValidate() {
       </Box>
 
       <Title
+        className={styles.titleRes}
         style={{
           zIndex: "2",
           position: "relative",
@@ -31,6 +32,7 @@ export default function HeroValidate() {
       </Title>
 
       <Box
+        className={styles.boxRes}
         style={{
           zIndex: "2",
           position: "relative",
@@ -38,13 +40,16 @@ export default function HeroValidate() {
           textAlign: "center",
         }}
       >
-        <Text c="#10224B" fz="35px">
+        <Text c="#10224B" fz="35px" className={styles.titleRes2}>
           اكتب رقم الشهادة للتحقق من صحتها على الفور
         </Text>
 
-        <Flex justify="center" align="center" gap="xl" mt="xl">
-          <Button size="xl">تحقق من الرمز الخاص بك</Button>
+        <Flex justify="center" align="center" gap="xl" mt="xl" wrap="wrap">
+          <Button className={styles.btn} size="xl">
+            تحقق من الرمز الخاص بك
+          </Button>
           <Input
+            className={styles.input}
             size="xl"
             styles={{
               input: {
