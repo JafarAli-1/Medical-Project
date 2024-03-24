@@ -17,6 +17,10 @@
   }
 }
 
+.imgFooter {
+  object-fit: contain;
+}
+
 .description {
   margin-top: rem(5px);
 

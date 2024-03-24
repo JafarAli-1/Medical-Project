@@ -4,3 +4,7 @@
     height: 21px !important;
   }
 }
+
+#menu {
+  text-decoration: none !important;
+}
