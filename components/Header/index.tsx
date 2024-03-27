@@ -49,22 +49,6 @@ const links = [
 ];
 
 export default function Header() {
-  // const items = links.map((link) => (
-  //   <a
-  //     style={{
-  //       color: "#10224B",
-  //       textDecoration: "none",
-  //       fontSize: "19px",
-  //       fontWeight: 500,
-  //     }}
-  //     key={link.label}
-  //     href={link.link}
-  //     onClick={(event) => event.preventDefault()}
-  //   >
-  //     {link.label}
-  //   </a>
-  // ));
-
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
       <Menu.Item key={item.link}>{item.label}</Menu.Item>
@@ -76,7 +60,9 @@ export default function Header() {
           key={link.label}
           trigger="click"
           styles={{
-            dropdown: { backgroundColor: "#10224B" },
+            dropdown: {
+              backgroundColor: "#10224B",
+            },
             item: {
               color: "#FFFFFF",
               fontSize: "17px",
@@ -85,6 +71,7 @@ export default function Header() {
               textAlign: "right",
               borderBottom: "1px solid rgb(255 255 255 / 22%)",
               borderRadius: "0px",
+              backgroundColor: "unset",
             },
           }}
         >
