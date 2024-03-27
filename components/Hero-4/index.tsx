@@ -7,7 +7,7 @@ import DrImage from "@/public/Mask Group 6@2x.png";
 export default function Hero4() {
   return (
     <div>
-      <Box style={{ position: "absolute", zIndex: "1" }}>
+      <Box style={{ position: "absolute", zIndex: "1", width: "100%" }}>
         <Image
           src={HeroImage4}
           alt="Home Page Image For Third Hero Page"

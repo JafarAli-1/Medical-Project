@@ -7,7 +7,7 @@ import CertificateImage from "@/public/Ceetifacat-02@2x.png";
 export default function HeroValidate2() {
   return (
     <div>
-      <Box style={{ position: "absolute", zIndex: "1" }}>
+      <Box style={{ position: "absolute", zIndex: "1", width: "100%" }}>
         <Image
           src={HeroValidateImage2}
           alt="Home Page Image For Validation Page"

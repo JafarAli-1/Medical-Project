@@ -21,7 +21,7 @@ import Stat3 from "@/public/Rectangle 50@2x.png";
 export default function Hero() {
   return (
     <div>
-      <Box style={{ position: "absolute", zIndex: "1" }}>
+      <Box style={{ position: "absolute", zIndex: "1", width: "100%" }}>
         <Image
           src={HomePageImage}
           alt="Home Page Image"

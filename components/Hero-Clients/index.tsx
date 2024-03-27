@@ -22,7 +22,7 @@ import ClientImage15 from "@/public/IMG-20240117-WA0007@2x.png";
 export default function HeroClients() {
   return (
     <div>
-      <Box style={{ position: "absolute", zIndex: "1" }}>
+      <Box style={{ position: "absolute", zIndex: "1", width: "100%" }}>
         <Image
           src={HeroClientsImage}
           alt="Home Page Image For Validation Page"
