@@ -10,7 +10,7 @@ export default function LogoSVG() {
       viewBox="0 0 364.721 95.069"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect
             id="Rectangle_67"
             data-name="Rectangle 67"
@@ -28,7 +28,7 @@ export default function LogoSVG() {
         fill="#10224b"
       />
       <g id="Group_72" data-name="Group 72">
-        <g id="Group_71" data-name="Group 71" clip-path="url(#clip-path)">
+        <g id="Group_71" data-name="Group 71" clipPath="url(#clipPath)">
           <path
             id="Path_159"
             data-name="Path 159"
