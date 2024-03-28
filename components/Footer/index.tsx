@@ -33,10 +33,10 @@ const data = [
   {
     title: "Contact US",
     links: [
-      { label: "+44 733 7741 279", link: "#" },
-      { label: "+44 733 7741 279", link: "#" },
-      { label: "INFO@MEDICAL.COM", link: "#" },
-      { label: "3 BOYD ST , LONDON E1 1FQ", link: "#" },
+      { label: "+44 773 7741 279", link: "#" },
+      { label: "+44 785 3207 464", link: "#" },
+      { label: "INFO@LONDON-MEDICAL.ORG", link: "#" },
+      { label: "3 BOYD ST, LONDON E1 1FQ", link: "#" },
     ],
   },
 ];

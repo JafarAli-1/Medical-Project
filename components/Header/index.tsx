@@ -62,6 +62,7 @@ export default function Header() {
           styles={{
             dropdown: {
               backgroundColor: "#10224B",
+              border: "none",
             },
             item: {
               color: "#FFFFFF",
